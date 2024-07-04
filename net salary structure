@@ -1,0 +1,24 @@
+#include <stdio.h>
+
+struct myStructure {
+    int da;
+    int ta;
+    int gs;
+    int ns; 
+};
+
+int main() {
+
+    struct myStructure s1 = {200, 600, 3000};
+    
+
+    s1.ns = s1.da + s1.ta + s1.gs;
+    
+
+    printf("DA: %d\n", s1.da);
+    printf("TA: %d\n", s1.ta);
+    printf("GS: %d\n", s1.gs);
+    printf("Net Salary: %d\n", s1.ns);
+    
+    return 0;
+}
